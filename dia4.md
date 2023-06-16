@@ -311,7 +311,7 @@ Le quiero devolver al proyecto original -> desarrollo
 
 Y en ese momento lo que hago es solicitar un MERGE REQUEST
 
-Esa solicitu de merge es recibida por los mantenedores del proyecto ORIGINAL y deben procesarla.
+Esa solicitud de merge es recibida por los mantenedores del proyecto ORIGINAL y deben procesarla.
 
 
 
