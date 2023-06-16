@@ -159,3 +159,53 @@ Al hacer los merge ff -> podre solicitar que se hagan o no con squash!
 
 
 Por que nunca querriamos una rama por spring? Una cosa son las características en las que trabajo y otra las que subo.
+
+--- main --------- C1 ---- cb
+                    v
+    desarrollo* -- C1 --- C2 --- C3 ------                     
+                    v            ^ ff      
+    feature1       C1 --- C2 --- C3                      feature1.txt
+                                  v       +patch
+                  feature2       C3 --- ca --- cb* ----cmiquel          feature2.txt
+                                        \
+                                hotfix    ca --> cc --> cb*
+git fetch origin feature2
+git merge origin/feature2
+
+    git pull 
+
+---
+
+git merge --ff-only
+
+Ese merge se ejecuta SOLO si el merge se puede ejecutar mediante estrategia FF... sino, el merge es abortado automaticamente.
+
+rama 1     C1 -> C2 -> C4
+            |       /
+rama 2     C1 -> C3
+---
+rama 1     C1 -------> C3
+            |       /
+rama 2     C1 -> C3
+
+
+
+
+git 
+
+
+---
+
+
+funcion1 {
+
+}
+
+vvvv
+
+function1 {
+
+}
+function2 {
+
+}
